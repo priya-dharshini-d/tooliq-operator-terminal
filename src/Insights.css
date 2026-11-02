@@ -1,0 +1,79 @@
+.insights-container {
+  padding: 2rem 2rem 2.5rem 2rem;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 500px;
+}
+
+.insights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-top: 20px; /* add top padding for spacing */
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-section select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.export-btn {
+  background-color: #0f1a3c; /* Deep navy blue background */
+  color: #f0f0f0; /* Light text color */
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.export-btn:hover {
+  background-color: #14224d; /* Slightly lighter on hover */
+}
+
+.insights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.graph-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 48%; /* two cards side by side */
+  min-width: 300px;
+  margin-top: 6px;
+}
+
+/* UPDATED STYLES FOR SPACING */
+
+.graph-title {
+  font-size: 1.1rem;
+  padding-bottom: 16px; /* padding for space */
+  border-bottom: 1px solid #ddd; /* subtle bottom border */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.graph-content {
+  padding-top: 12px; /* spacing between title and chart */
+}

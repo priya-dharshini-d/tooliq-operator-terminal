@@ -1,0 +1,141 @@
+/* Container and heading */
+.operator-analytics-container {
+  padding: 20px 40px;
+  background: #f9fbff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  max-width: 1200px; /* control max width */
+  margin: 0 auto; /* center horizontally */
+  margin-top: 380px;
+}
+
+.operator-analytics-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2a3e7b;
+}
+
+/* Filter and export container: align filter left, export right */
+.filter-export-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+/* Filter label and select inline and nicely spaced */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #2a3e7b;
+  font-size: 1rem;
+}
+
+/* Select styling */
+.filter-group select {
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Export button aligned right, styled like in screenshot */
+.export-button {
+  background-color: #0f2147; /* dark navy */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.export-button:hover {
+  background-color: #09223f;
+}
+
+/* Summary cards container - keep centered */
+.summary-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual summary cards styling */
+.summary-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  width: 180px;
+  text-align: center;
+}
+
+.summary-title {
+  font-weight: 600;
+  color: #455a96;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.summary-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f2e63;
+}
+
+/* Operator table: wider and with some padding */
+.operator-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+/* Table header */
+.operator-table thead {
+  background-color: #455a96;
+  color: white;
+}
+
+/* Header and cells padding */
+.operator-table th,
+.operator-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid #e3e8f0;
+  font-size: 1rem;
+  overflow-wrap: break-word;
+}
+
+/* Hover effect on rows */
+.operator-table tbody tr:hover {
+  background-color: #f0f4ff;
+  cursor: default;
+}
+
+/* Highlight flagged rows */
+.operator-table tbody tr.flagged {
+  background-color: #ffe3e3;
+  color: #a00000;
+  font-weight: 600;
+}
+
+.operator-table tbody tr.flagged:hover {
+  background-color: #ffbaba;
+  color: #660000;
+}
