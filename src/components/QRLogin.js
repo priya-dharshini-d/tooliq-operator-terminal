@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Webcam from 'react-webcam';
 import jsQR from 'jsqr';
@@ -15,7 +15,7 @@ const QRLogin = () => {
   const [scanned, setScanned] = useState(false);
   const [mode, setMode] = useState('operator'); // 'operator' or 'storekeeper'
 
-  const scanQRCode = async () => {
+  const scanQRCode = useCallback(async () => {
     if (
       webcamRef.current &&
       webcamRef.current.video &&
@@ -53,12 +53,12 @@ const QRLogin = () => {
         }
       }
     }
-  };
+  }, [mode, navigate, scanned]);
 
   useEffect(() => {
     const interval = setInterval(scanQRCode, 1000);
     return () => clearInterval(interval);
-  }, [mode, scanned]);
+  }, [scanQRCode]);
 
   return (
     <div className="min-h-screen bg-[#b8cfce] flex flex-col items-center justify-center px-4 py-10 font-sans relative">
